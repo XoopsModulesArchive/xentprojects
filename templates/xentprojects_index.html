@@ -1,0 +1,24 @@
+<div class="modTitle"><{$modTitle}></div>
+<div class="modDesc"><{$modDesc}></div>
+
+<{foreach item=projects from=$projects}>
+	<table width="100%">
+    	<tr>
+    		<{if $projects.imagewhereto == 1 && $isImage == 1}>
+            	<td id="projects" width="10%"><img src="<{$upload_dir}>/<{$projects.pict}>"></img></td>
+        	<{/if}>
+
+        	<td id="projects">
+                <li class="projectTitle"><{$projects.title}></li><br><br>
+    			<div class="projectDesc"><{$projects.introduction}></div><br>
+                <div class="projectReadMore"><a href="projects.php?id=<{$projects.ID_PROJECT}>"><{$projects.readmore}></a></div>
+			</td>
+
+            <{if $projects.imagewhereto == 2 && $isImage == 1}>
+            	<td id="projects" width="10%"><img src="<{$upload_dir}>/<{$projects.pict}>"></img></td>
+        	<{/if}>
+        </tr>
+    </table>
+    <br>
+
+<{/foreach}>

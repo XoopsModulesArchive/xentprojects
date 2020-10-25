@@ -1,0 +1,58 @@
+/* Created by TopStyle Pro Trial Version - www.bradsoft.com */
+
+.modDesc {
+	color: #394F76;
+	
+	font-size:12px;
+	font-weight: bold;
+	
+	padding-bottom:10px;
+	padding-top:10px;	
+}
+
+.modTitle {
+	color: #394F76;
+	
+	font-size:18px;
+	font-weight: bold;
+	
+	padding-bottom:10px;
+	padding-top:20px;
+}
+
+.projectBack{
+	color: #394F76;
+	
+	font-size: 10px;
+	font-weight: lighter;	
+}
+
+.projectDesc{
+	color: #394F76;
+	
+	font-size: 12px;
+	font-weight: lighter;	
+}
+
+.projectReadMore{
+	color: #394F76;
+	
+	font-size: 10px;
+	font-weight: lighter;	
+}
+
+.projectTitle{
+	color: #394F76;
+	
+	font-size: 14px;
+	font-weight: bold;	
+}
+
+
+td#projects{
+	background-color: #F6F6F6;
+	
+	padding-bottom: 5px;
+	padding-left: 3px;
+	padding-right: 5px;
+}

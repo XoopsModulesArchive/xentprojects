@@ -1,0 +1,26 @@
+<div class="modTitle"><{$modTitle}></div>
+<div class="modDesc"><{$modDesc}></div>
+
+<{foreach item=project from=$project}>
+	<table width="100%">
+	    <tr>
+	        <{if $project.imagewhereto == 1 && $isImage == 1}>
+	            <td id="projects" width="10%"><img src="<{$upload_dir}>/<{$project.pict}>"></img></td>
+	        <{/if}>
+
+	        <td id="projects">
+	            <li class="projectTitle"><{$project.title}></li><br><br>
+	            <div class="projectDesc"><{$project.introduction}></div><br>
+	            <div class="projectDesc"><{$project.description}></div>
+	        </td>
+
+	        <{if $project.imagewhereto == 2 && $isImage == 1}>
+	            <td id="projects" width="10%"><img src="<{$upload_dir}>/<{$project.pict}>"></img></td>
+	        <{/if}>
+	    </tr>
+	</table>
+<{/foreach}>
+
+<br>
+
+<div class="projectBack"><a href="javascript:history.back()"><{$projectBack}><a></div>
